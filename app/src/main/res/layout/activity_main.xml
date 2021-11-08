@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="20dp"
+    android:paddingTop="50dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/teamsTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/segoe_ui"
+        android:text="Microsoft Teams"
+        android:textAlignment="center"
+        android:textColor="@color/theme_color"
+        android:textSize="28sp" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="153dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@drawable/illustration" />
+
+    <TextView
+        android:id="@+id/welcomeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:fontFamily="@font/segoe_ui"
+        android:lineHeight="24dp"
+        android:paddingHorizontal="33dp"
+        android:paddingVertical="10dp"
+        android:text="Get started with your work,school, or personal microsoft account"
+        android:textAlignment="center"
+        android:textSize="19dp"></TextView>
+
+    <EditText
+        android:id="@+id/emailPhoneSkypeInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcomeTextView"
+        android:layout_marginHorizontal="33dp"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/rounded_box_corner"
+        android:fontFamily="@font/segoe_ui"
+        android:hint="Enter email, phone, or Skype"
+        android:lineHeight="24dp"
+        android:padding="20dp"
+        android:textAlignment="center"
+        android:textColor="#616161"
+        android:maxLines="1"
+        android:textSize="19dp"></EditText>
+
+    <Button
+        android:id="@+id/signInButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailPhoneSkypeInput"
+        android:layout_marginHorizontal="33dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rounded_box_corner"
+        android:fontFamily="@font/segoe_ui"
+        android:lineHeight="24dp"
+        android:padding="13dp"
+        android:text="Sign in"
+        android:textAllCaps="false"
+        android:textSize="19dp"></Button>
+
+    <TextView
+        android:id="@+id/getHelpTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signInButton"
+        android:fontFamily="@font/segoe_ui"
+        android:lineHeight="24dp"
+        android:text="Get help with signing in"
+        android:textAlignment="center"
+        android:textColor="@color/theme_color"
+        android:textSize="19dp"></TextView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/joinMeetingButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/getHelpTextView"
+        android:layout_marginHorizontal="13dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rounded_box_corner_with_border"
+
+        android:fontFamily="@font/segoe_ui"
+        android:text="Join a meeting"
+        android:textAllCaps="false"
+        android:textColor="@color/theme_color"
+        android:textSize="19dp"></androidx.appcompat.widget.AppCompatButton>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signUpButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/joinMeetingButton"
+        android:layout_marginHorizontal="13dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_box_corner_with_border"
+        android:drawableLeft="@drawable/microsoft_image_component"
+        android:fontFamily="@font/segoe_ui"
+        android:paddingHorizontal="85dp"
+        android:text="Sign up for free"
+        android:textAllCaps="false"
+        android:textColor="@color/theme_color"
+        android:textSize="19dp"></androidx.appcompat.widget.AppCompatButton>
+
+</RelativeLayout>
